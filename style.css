@@ -131,4 +131,14 @@ small{
     grid-template-columns:auto;
     grid-template-rows:auto;
   }
+  p{
+    font-size:100%; 
+  }
+  button{
+    position: absolute;
+  }
+  header{
+    margin: 0%;
+    padding: 0%;
+  }
 }
