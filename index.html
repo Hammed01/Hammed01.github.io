@@ -3,60 +3,115 @@
 	<head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Hammed Oluwole's Page</title>
-         <link href="style.css" type ="text/css" rel = "stylesheet"/>
+         <link href="css/style.css" type ="text/css" rel = "stylesheet"/>
+         <link href="css/normalize.css" type ="text/css" rel = "stylesheet"/>
+         <link href="css/grid.css" type ="text/css" rel = "stylesheet"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <style>
-				@import url('https://fonts.googleapis.com/css?family=Catamaran');
+				@import url('https://fonts.googleapis.com/css?family=Catamaran:100,300,400,300italic');
 		</style>
 
 	</head>
     <body>
-        <nav>
-            <ul class="link">
-                    <li><a href="https://www.twitter.com/@oluwolley">About</a> </li>
-                    <li><a href="https://www.github.com/hammed01">Portfolio </a></li>    
-                </ul>
-            </nav>
-            <header>
-            <p> I am a Front-end Web developer and a U.I designer</p>
-            <button onclick="location.href='#Form'" type="button" id="showform">Hire Me</button>
-            </header>
-            <h3> Good at!!</h3>
+
+            <nav>
+                <div class="row">
+                  <img src="img/LOGO.png" alt="my Logo" class="logo"> 
+                  <ul class="main-nav">
+                    <li><a href="#">My Work</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">My CV</a></li>
+                  
+                  <li></li><a id="nav-bar"href="#"><i class="fas fa-bars"></i></a><li></li>
+                </ul> 
+                </div>
+
+
+                </nav>
+
+        <header>
            
+           <div class="hero">
+
+            <h1> OLUWOLLEY</h1>
+            <div class="header-p">
+            <p> A Front-end Web Developer &mdash; I develop Cool Stuffs</p>
+            <a href="#"><i class="fas fa-chevron-down"></i></a>
+          </div>
+           </div>
+          
+       
+           
+        </header>
+        <section class="about-me row">
+            <div class="col span_12_of_12">
+                <h2> About Me</h2>
+            <p> My Name is Oluwole A Front-end Web Developer and designer <br> A resident of Lagos. Am Proficient with HTML5, CSs, Javascript and JQuery. <br> I work presently as A Customer Service Representative With <br> 
+                the Nigeria InterBank Settlment System (NIBSS). I will consider myself as a CSR by the day and A coder in the Night.<br> I Am Looking for An opportunity to build an Awesome and Amazing <br>
+                Website Like this For anyone in dire need of a Website.</p>
+            </div>
+            
+        </section>
+
+        <section class="my-work row" >
+            
+                <div class="col span_4_of_12 my-work-one">
+                <h2>My Work </h2>
+                <p>I am presently Learning and am Looking for a great Project
+                    <br> to work on. I have worked on some projects on my own. <br>
+                    I have worked with fronstack.io. I also did a gig with (hotels.ng) HNG Program. </p>
+            </div>
+            <div class="my-work-two col span_8_of_12">
+                    <p>I've worked on These Projects </p>
+                    <ul>
+                        <li><a href="https//frontstack.io"><img src="img/fonstack.png"></a></li>
+                        <li><a href="https//hng.fun"><img src="img/hng.png"></a></li>
+                        <li><a href="#"><img src="img/health-plus.png"></a></li>
+
+                    </ul>
+            
+
+            </div>
+           
+
+        </section>
+
+       
+
+        <footer>
+               
+                <div id="contact" class="contact row">
+                <div class="col span_1_of_3">
+                    <h5> Contact Me</h5>
+                    <small>shotolahammed01@gmail.com</small>
+                    
+                </div>
+                <div class="col span_1_of_3">
+                    <h5> Follow Me</h5>
+                    <ul>
+                        <li><a href="https//twitter.com/oluwolley">Twitter</a></li>
+                        <li><a id="git" href="https//github.com/Hammed01">Github</a></li>
+                    </ul>
+                    <!-- <i class="fas fa-twitter-square"></i>-->
+                </div>
+                <div class="col span_1_of_3">
+                        <h5> Copyright</h5>
+                        <small> &copy; OLUWOLLEY, 2018</small>
+                </div>
+            </div>
+        </footer>
         
-        <main>
-            <article>
-                    <div><i class="fa   fa-laptop fa-5x"></i></div>
-                    Front End Web development with proven records in developing Creative U.I  for Web Using  (HTML5 and CSS3, JS, Bootsrap). With the help of my Team we can also help you with the Back end using Laravel FrameWork, MySQl Database.
-             </article>     
-                    <article>
-                            <div><i class="fa  fa-tablet fa-5x"></i></div>
-                            An Expert in U.I design for mobile apps and Web Application, also Familiar with SEO. <br />
-                            Sketch App * Invision * Photoshop/Illustrator. I can help you Convey Information to potential customers. Increase brand awareness and sell your product and Services.                            
-                    </article>
-                <article>
-                       <div><i class="fa  fa-mobile-phone fa-5x"></i></div> 
-                       Mobile Development, We develop Custom Application for Mobile device(I.O.S, Android) using Kotlin/Xml for the Android application and Objective C for the I.O.S Application. 
-                </article>
-            </main>
-                <form id="Form" action="action.php" method="post">
-                        <fieldset>
-                                <legend> Contact Us </legend>
-                                <label> Full Name :<br/>
-                                <input type="text"  name="name"></label> <br />
-                                <label> Email :<br/>
-                                <input type="email"  name="email"></label> <br />
-                                <label> Message: <br/> 
-                                <textarea name="comment" cols="30" rows="4"> </textarea> </label> <br />
-                        
-                            <input type="submit" name="Submit"  value=" Submit "> <br />
-                        </fieldset>
-                 </form>
-    <footer>
-        <small>copyright 2018</small>
-    </footer>
+    </body>
+   
+  
+
+    
+   
+    
+
+
     <script src="script/jquery-3.2.1.min.js"></script>
    <script src="script/script.js"></script>
    

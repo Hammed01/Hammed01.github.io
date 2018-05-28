@@ -1,0 +1,345 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+html {
+  background-color: black;
+  margin: 0px !important;
+  padding: 0px !important;
+  font-family: 'Catamaran', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;  
+  color:#fff;
+}
+
+
+.row{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+
+
+/*  Header */
+header{
+  
+ 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.hero{
+  position: absolute;
+  max-width: 1140px;
+  top:40%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  
+}
+.hero h1{
+  padding-left: 90px;
+}
+
+.header-p p,
+ .header-p i{
+  color: rgba(255, 255, 255, 0.508);
+}
+.header-p i{
+  padding-left:50%;
+  padding-top:60px;
+  font-size:180%;
+  
+}
+
+h1{
+  color:#fff;
+  font-size: 260%;
+  letter-spacing: 1px;
+  word-spacing: 4px; 
+}
+
+/*  Navigatiob Bar */
+.logo{
+  color:black;
+  float:left;
+  margin-top: 20px;
+}
+.main-nav{
+  margin-top: 30px;
+ float: right;
+ list-style: none;
+  
+}
+#nav-bar{
+  display:none;
+}
+
+.main-nav li{
+  display: inline-block;
+  margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+  padding: 10px 0;
+  color:#fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size:90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+  border-bottom: 2px solid rgba(237, 15, 45, 0.761);
+}
+
+/* section */
+
+.about-me  p{
+
+  font-size: 150%;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  line-height:3rem;
+  margin-bottom: 80px;
+}
+
+.my-work p{
+  font-size: 90%;
+  line-height:1.5rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: rgba(255, 255, 255, 0.508);
+}
+.my-work-one{
+  border-top: 5px solid rgba(237, 15, 45, 0.761);
+  height: 150px;
+}
+.my-work ul li{
+    display: inline-block;
+    margin-left: 50px;
+    list-style: none;
+}
+.my-work img{
+  height: 150px;
+  width: 150px;
+}
+.my-work h2,.my-work-two p{
+  border-top: 5px solid transparent;
+  margin-top: 40px;
+  
+}
+.my-work-two p{
+  text-align: center;
+  text-transform: uppercase;
+}
+.my-work p,.my-work-two ul{
+  margin-top: 30px;
+  margin-bottom: 60px;
+  
+}
+
+/* Footer And contact  */
+
+
+.contact ul li{
+  display: inline-block;
+    margin-left: 30px;
+    list-style: none;
+}
+.contact a{
+  text-decoration: none;
+  color: #fff;
+}
+.contact h5{
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.508);
+}
+
+small, ul{
+  margin-bottom: 5  0px;
+}
+
+
+
+
+
+
+/* Big Tabley to 1220px*/
+@media only screen and (max-width: 1200px){
+  .hero{
+    position: absolute;
+    max-width: 100%;
+    padding: 0 2%;
+   top:40%;
+   left:50%;
+   transform: translate(-50%, -50%);
+  }
+
+  .row{
+    padding:0 2%;
+  }
+
+ 
+
+
+}
+
+
+
+/* Small Tablets - Big Tablets  from 767px - 1023px*/
+@media only screen and (max-width: 1023px){
+  
+html{
+  font-size: 18px;
+}
+
+.header-p p,
+.header-p h1,
+.header-p i{
+  font-size: 80%;
+}
+.hero h1{
+  padding-left: 50px;
+}
+
+.about-me  p{
+
+  font-size: 120%;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  line-height:2rem;
+  margin-bottom: 50px;
+}
+
+.about-me h2{
+  padding-bottom: 20px;
+}
+.contact ul li{
+  display: inline-block;
+  margin-left:0;
+  list-style: none;
+}
+
+
+}
+
+
+
+
+/* Small Phones to Small Tablets from 480px - 767*/
+@media only screen and (max-width: 767px){
+  html{
+    font-size: 16px;
+  }
+  .row,.hero{
+    padding:0 4%;
+  }
+  .col{
+    width: 100%;
+  }
+  .main-nav{
+    display: none;
+  }
+  
+  .my-work h2{
+    margin-top: 5px;
+   
+  }
+
+  .my-work p
+  {
+  
+    line-height:1.3rem;
+  }
+  
+  .my-work-two p{
+     margin-top: 30px;
+     padding-top:20px;
+     color: #fff;
+    
+  }
+
+  
+  .my-work img{
+    padding-top: 0px;
+    height: 75px;
+    width: 75px;
+  }
+
+ .my-work-two ul,.my-work p{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
+  }
+
+  .about-me  p{
+
+    font-size: 100%;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    line-height:2rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-me h2{
+    padding-bottom: 10px;
+  }
+
+  .header-p p,
+.header-p h1,
+.header-p i{
+  font-size: 70%;
+}
+
+.hero h1{
+  padding-left: 50px;
+}
+
+.my-work p,.my-work-two ul{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+}
+
+.my-work-two p{
+  border-top: 5px solid transparent;
+  margin-top: 40px;
+  
+}
+
+}
+
+
+
+
+/* Small Phones from 0 to 480px*/
+@media only screen and (max-width: 480px){
+  .my-work img{
+    height: 70px;
+    width: 70px;
+   
+  }
+  #git{
+    padding-left:15px;}
+  
+ 
+ 
+    .contact h5{
+
+      margin-bottom: 10px;
+      letter-spacing: 3px;
+      color: rgba(255, 255, 255, 0.508);
+    }
+  
+ 
+}
+
