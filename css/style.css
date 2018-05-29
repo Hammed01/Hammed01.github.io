@@ -7,7 +7,7 @@
 }
 
 
-html {
+html,body {
   background-color: black;
   margin: 0px !important;
   padding: 0px !important;
@@ -38,31 +38,33 @@ header{
   position: absolute;
   max-width: 1140px;
   top:40%;
-  left:50%;
+  left:55%;
   transform: translate(-50%, -50%);
   
 }
-.hero h1{
-  padding-left: 90px;
+
+#head-p{
+font-size:300%;
+padding-left: 30px;
+color:#fff;
+letter-spacing: 1px;
 }
 
 .header-p p,
  .header-p i{
   color: rgba(255, 255, 255, 0.508);
+     
+}
+strong{
+    color: crimson;
 }
 .header-p i{
-  padding-left:50%;
+  padding-left:44%;
   padding-top:60px;
   font-size:180%;
   
 }
 
-h1{
-  color:#fff;
-  font-size: 260%;
-  letter-spacing: 1px;
-  word-spacing: 4px; 
-}
 
 /*  Navigatiob Bar */
 .logo{
@@ -76,8 +78,12 @@ h1{
  list-style: none;
   
 }
-#nav-bar{
+.nav-bar {
+  margin-top: 15px;
   display:none;
+  float: right;
+  font-size: 200%;
+   color: #fff;
 }
 
 .main-nav li{
@@ -179,7 +185,7 @@ small, ul{
     position: absolute;
     max-width: 100%;
     padding: 0 2%;
-   top:40%;
+   top:60%;
    left:50%;
    transform: translate(-50%, -50%);
   }
@@ -202,17 +208,21 @@ html{
   font-size: 18px;
 }
 
-.header-p p,
-.header-p h1,
+
 .header-p i{
-  font-size: 80%;
+  font-size: 180%;
 }
-.hero h1{
-  padding-left: 50px;
+#head-p{
+font-size:300%;
+padding-left: 20px;
+color:#fff;
+letter-spacing: 1px;
 }
+    
+    
+
 
 .about-me  p{
-
   font-size: 120%;
   letter-spacing: 1px;
   word-spacing: 4px;
@@ -254,6 +264,14 @@ html{
     margin-top: 5px;
    
   }
+    .nav-bar{
+        display: inline-block;
+    }
+    .main-nav li{
+        display: block;
+        padding-top: 10px;
+         margin-left: 0px;
+    }
 
   .my-work p
   {
@@ -277,7 +295,7 @@ html{
 
  .my-work-two ul,.my-work p{
     padding-top: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 40px;
     
   }
 
@@ -294,12 +312,25 @@ html{
     padding-bottom: 10px;
   }
 
-  .header-p p,
-.header-p h1,
 .header-p i{
-  font-size: 70%;
+  font-size: 150%;
+}
+    
+#head-p{
+font-size:300%;
+padding-left: 20px;
+color:#fff;
+letter-spacing: 1px;
 }
 
+.main-nav li a:hover,
+.main-nav li a:active{
+  color: crimson;
+ border-bottom: transparent;
+}
+  
+    
+    
 .hero h1{
   padding-left: 50px;
 }
@@ -315,8 +346,12 @@ html{
   margin-top: 40px;
   
 }
-
+    #contact{
+        font-size: 90%;
+    }
 }
+
+   
 
 
 
@@ -340,6 +375,17 @@ html{
       color: rgba(255, 255, 255, 0.508);
     }
   
+    
+    .header-p i{
+  font-size: 180%;
+}
+#head-p{
+font-size:300%;
+padding-left: 20px;
+color:#fff;
+letter-spacing: 1px;
+}
+   
  
 }
 

@@ -6,6 +6,7 @@
          <link href="css/style.css" type ="text/css" rel = "stylesheet"/>
          <link href="css/normalize.css" type ="text/css" rel = "stylesheet"/>
          <link href="css/grid.css" type ="text/css" rel = "stylesheet"/>
+         <link href="js/animate.css" type ="text/css" rel = "stylesheet"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -20,13 +21,15 @@
                 <div class="row">
                   <img src="img/LOGO.png" alt="my Logo" class="logo"> 
                   <ul class="main-nav">
-                    <li><a href="#">My Work</a></li>
-                    <li><a href="#">About Me</a></li>
+                    <li><a class="mywork" href="#">My Work</a></li>
+                    <li><a class="about" href="#">About Me</a></li>
                     <li><a href="#">My CV</a></li>
-                  
-                  <li></li><a id="nav-bar"href="#"><i class="fas fa-bars"></i></a><li></li>
+                 
                 </ul> 
+                    <a class="nav-bar" href="#"><i class="fas fa-bars"></i></a>  
                 </div>
+
+                    
 
 
                 </nav>
@@ -35,10 +38,10 @@
            
            <div class="hero">
 
-            <h1> OLUWOLLEY</h1>
+            <h1 id="head-p"> OLUWO<strong>L</strong>LEY</h1>
             <div class="header-p">
             <p> A Front-end Web Developer &mdash; I develop Cool Stuffs</p>
-            <a href="#"><i class="fas fa-chevron-down"></i></a>
+            <a class="arrow-down"href="#"><i class="fas fa-chevron-down"></i></a>
           </div>
            </div>
           
@@ -98,10 +101,13 @@
                 </div>
                 <div class="col span_1_of_3">
                         <h5> Copyright</h5>
-                        <small> &copy; OLUWOLLEY, 2018</small>
+                        <small> &copy; OLUWO<strong>L</strong>LEY, 2018</small>
                 </div>
             </div>
         </footer>
+          <script src="script/jquery-3.2.1.min.js"></script> 
+    <script src="js/jquery.waypoints.min.js"></script>
+        <script src="script/script.js"></script>
         
     </body>
    
@@ -112,8 +118,6 @@
     
 
 
-    <script src="script/jquery-3.2.1.min.js"></script>
-   <script src="script/script.js"></script>
+  
    
-    </body>
-</html>
+   
