@@ -37,8 +37,8 @@ header{
 .hero{
   position: absolute;
   max-width: 1140px;
-  top:40%;
-  left:55%;
+  top:50%;
+  left:50%;
   transform: translate(-50%, -50%);
   
 }
@@ -68,6 +68,8 @@ strong{
 
 /*  Navigatiob Bar */
 .logo{
+  position: fixed;
+  top:0;
   color:black;
   float:left;
   margin-top: 20px;
@@ -81,11 +83,15 @@ strong{
 .nav-bar {
   margin-top: 15px;
   display:none;
+  cursor: pointer;
   float: right;
-  font-size: 200%;
-   color: #fff;
+  
 }
+.nav-bar  i{
+  font-size: 200%;
+  color: #fff;
 
+}
 .main-nav li{
   display: inline-block;
   margin-left: 40px;
@@ -105,6 +111,17 @@ strong{
 .main-nav li a:active{
   border-bottom: 2px solid rgba(237, 15, 45, 0.761);
 }
+
+
+
+.sticky{
+  position: fixed;
+  top:0;
+  right: 60px;
+  width:100;
+  background-color: rgba(34, 34, 34, 0.118);
+}
+
 
 /* section */
 
@@ -134,8 +151,8 @@ strong{
     list-style: none;
 }
 .my-work img{
-  height: 150px;
-  width: 150px;
+  height: 100%;
+  width: 100%;
 }
 .my-work h2,.my-work-two p{
   border-top: 5px solid transparent;
@@ -171,9 +188,8 @@ strong{
 }
 
 small, ul{
-  margin-bottom: 5  0px;
+  margin-bottom: 5 0px;
 }
-
 
 
 
@@ -185,7 +201,7 @@ small, ul{
     position: absolute;
     max-width: 100%;
     padding: 0 2%;
-   top:60%;
+   top:50%;
    left:50%;
    transform: translate(-50%, -50%);
   }
@@ -193,7 +209,10 @@ small, ul{
   .row{
     padding:0 2%;
   }
-
+  html,body{
+    font-size: 18px;
+  }
+  
  
 
 
@@ -204,7 +223,7 @@ small, ul{
 /* Small Tablets - Big Tablets  from 767px - 1023px*/
 @media only screen and (max-width: 1023px){
   
-html{
+html,body{
   font-size: 18px;
 }
 
@@ -257,7 +276,9 @@ letter-spacing: 1px;
     width: 100%;
   }
   .main-nav{
-    display: none;
+    float: left;
+    margin-left: 70%;
+
   }
   
   .my-work h2{
@@ -270,7 +291,7 @@ letter-spacing: 1px;
     .main-nav li{
         display: block;
         padding-top: 10px;
-         margin-left: 0px;
+        margin-left: 0px;
     }
 
   .my-work p
@@ -280,28 +301,26 @@ letter-spacing: 1px;
   }
   
   .my-work-two p{
-     margin-top: 30px;
-     padding-top:20px;
      color: #fff;
-    
   }
+  .my-work ul li{
+    display: inline-block;
+    margin-left: 20px;
+    list-style: none;
+}
 
   
   .my-work img{
     padding-top: 0px;
-    height: 75px;
-    width: 75px;
+    height: 100px;
+    width:100px;
   }
 
- .my-work-two ul,.my-work p{
-    padding-top: 0px;
-    padding-bottom: 40px;
-    
-  }
+
 
   .about-me  p{
 
-    font-size: 100%;
+    font-size: 90%;
     letter-spacing: 1px;
     word-spacing: 4px;
     line-height:2rem;
@@ -313,7 +332,7 @@ letter-spacing: 1px;
   }
 
 .header-p i{
-  font-size: 150%;
+  font-size: 100%;
 }
     
 #head-p{
@@ -329,26 +348,26 @@ letter-spacing: 1px;
  border-bottom: transparent;
 }
   
-    
-    
-.hero h1{
-  padding-left: 50px;
+  
+
+.my-work > div{
+ 
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.my-work p,.my-work-two ul{
-  margin-top: 30px;
-  margin-bottom: 30px;
-  
-}
-
-.my-work-two p{
-  border-top: 5px solid transparent;
-  margin-top: 40px;
-  
-}
     #contact{
         font-size: 90%;
     }
+
+    .contact div ul{
+     
+     font-size: 90%;
+      
+    }
+
+    
+    
 }
 
    
@@ -358,34 +377,67 @@ letter-spacing: 1px;
 
 /* Small Phones from 0 to 480px*/
 @media only screen and (max-width: 480px){
+  html,body{
+    font-size: 14px;
+  }
+
+  .hero{
+    position: absolute;
+    max-width: 1140px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    
+  }
+ 
   .my-work img{
-    height: 70px;
-    width: 70px;
+    height: 100%;
+    width: 100%;
    
   }
   #git{
     padding-left:15px;}
   
- 
+    .col{
+      width: 100%;
+    }
  
     .contact h5{
 
       margin-bottom: 10px;
-      letter-spacing: 3px;
+      letter-spacing: 1px;
       color: rgba(255, 255, 255, 0.508);
     }
-  
+    .my-work-two{
+      padding-top: 30px;
+      margin-top: 30px;
+     
+    }
+
+    .my-work-one p{
+      padding-top: 0;
+      margin-top: 20px;
+      
+      
+    }
+    .header-p{
+      padding: 0;
+      font-size: 100%;
+    } 
+
     
-    .header-p i{
-  font-size: 180%;
-}
+  
 #head-p{
 font-size:300%;
 padding-left: 20px;
 color:#fff;
 letter-spacing: 1px;
 }
-   
- 
-}
 
+
+
+
+ 
+
+
+}

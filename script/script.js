@@ -1,4 +1,17 @@
     $(function(){
+        $('.about-me').waypoint(function(direction){
+            if(direction == "down"){
+                
+                $('nav ul').addClass('sticky');
+            }else{
+                $('nav ul').removeClass('sticky');
+            }
+
+        });
+
+
+        $('.arrow').addClass('animated infinite pulse');
+        $('#head-p').addClass('animated infinite pulse');
        
         $('.nav-bar').click(function(){
     var nav = $('.main-nav');
@@ -43,7 +56,11 @@
 });
     
 });
-        
+
+
+      
+            
+
         
     });
 
