@@ -74,6 +74,7 @@ strong{
   color:black;
   float:left;
   margin-top: 20px;
+
 }
 .main-nav{
   margin-top: 30px;
@@ -289,6 +290,7 @@ letter-spacing: 1px;
    
   }
     .nav-bar{
+        margin-top:6%;
         display: inline-block;
     }
     .main-nav li{
@@ -375,7 +377,10 @@ letter-spacing: 1px;
       letter-spacing: 1px;
       }
       
-
+.logo{
+    width:10%;
+    height: 10%;
+}
     
     
 }
@@ -451,9 +456,12 @@ letter-spacing: 1px;
 }
 
 
-
+.logo{
+  width:10%;
+  height: 10%;
+}
 
  
 
 
-}
+}}
